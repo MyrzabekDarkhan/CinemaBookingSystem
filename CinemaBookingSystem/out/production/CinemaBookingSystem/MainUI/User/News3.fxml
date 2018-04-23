@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainUI.User.NewsController">
+    <children>
+        <ImageView fitHeight="141.0" fitWidth="135.0" layoutX="233.0" layoutY="-31.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../resources/images/icons8-netflix-528.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="68.0" fitWidth="64.0" layoutX="157.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../resources/images/icons8-новости-96.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="back" layoutX="531.0" layoutY="362.0" mnemonicParsing="false" onAction="#BacktoDash" style="-fx-background-color: c10d0d;" text="Back" textFill="WHITE" />
+        <Label layoutX="7.0" layoutY="63.0" prefHeight="70.0" prefWidth="587.0" text="How Much Avengers: Infinity War Reportedly Cost To Make" textFill="#c10d0d">
+            <font>
+                <Font name="SansSerif Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextArea layoutX="284.0" layoutY="110.0" prefHeight="226.0" prefWidth="316.0" style="-fx-background-color: #c10d0d;" text="We've known for a long time that Avengers: Infinity &#10;War would be an expensive movie. Shot back-to-back&#10; with the still-untitled Avengers 4, the upcoming &#10;Marvel movie has been touted as the biggest, &#10;most-complicated Marvel movie yet, not to mention&#10; its ensemble cast is huge and costly. A new estimate &#10;has indicated the actual cost to make Avengers:&#10; Infinity War may be a little lower than some may &#10;have expected, as the budget was reportedly $300 &#10;million for the long-awaited film. While that's very &#10;expensive, it's still not the most expensive movie &#10;ever made.">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </TextArea>
+        <Button fx:id="down" layoutX="21.0" layoutY="362.0" mnemonicParsing="false" onAction="#goToNews2" style="-fx-background-color: c10d0d;" text="--&gt;" textFill="WHITE" />
+      <ImageView fitHeight="260.0" fitWidth="325.0" layoutX="-40.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/Tony-and-Star-Lord.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

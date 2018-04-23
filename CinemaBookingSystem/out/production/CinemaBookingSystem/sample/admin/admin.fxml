@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" style="-fx-background-color: F5FFFA;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.admin.AdminController">
+   <children>
+      <Separator layoutX="-4.0" layoutY="76.0" prefHeight="14.0" prefWidth="408.0" />
+      <ImageView id="admin" fx:id="admin" fitHeight="76.0" fitWidth="177.0" layoutX="117.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/admin.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="50.0" layoutY="118.0" prefHeight="25.0" prefWidth="160.0" />
+      <PasswordField fx:id="password" layoutX="50.0" layoutY="204.0" prefHeight="25.0" prefWidth="160.0" />
+      <Button fx:id="closeButton" cancelButton="true" layoutX="320.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeButtonAction" style="-fx-background-color: #FF6347;" text="Exit">
+         <font>
+            <Font name="Aharoni Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button id="Login" fx:id="loginButton" layoutX="53.0" layoutY="366.0" mnemonicParsing="false" onAction="#Login" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: #4fee00;" text="SIGN IN">
+         <font>
+            <Font name="Aharoni Bold" size="12.0" />
+         </font></Button>
+      <Button id="Switch" fx:id="BACK" layoutX="232.0" layoutY="366.0" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: gold;" text="BACK">
+         <font>
+            <Font name="Aharoni Bold" size="12.0" />
+         </font></Button>
+      <Label id="Username" fx:id="Admin" layoutX="53.0" layoutY="99.0" prefHeight="19.0" prefWidth="66.0" text="Admin ID" textFill="#014564">
+         <font>
+            <Font name="Aharoni Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label id="Password" fx:id="Password" layoutX="51.0" layoutY="186.0" prefHeight="14.0" prefWidth="66.0" text="Password" textFill="#014564">
+         <font>
+            <Font name="Aharoni Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="dbstatus" layoutX="41.0" layoutY="271.0" prefHeight="17.0" prefWidth="214.0" />
+      <Label fx:id="loginStatus" layoutX="50.0" layoutY="236.0" prefHeight="25.0" prefWidth="182.0" />
+      <ImageView fitHeight="76.0" fitWidth="66.0" layoutX="20.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/frame.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="14.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/icons8-модератор-40.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="16.0" layoutX="177.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/icons8-конфигурация-данных-16.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="14.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/icons8-блокировка-2-40.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="310.0" fitWidth="160.0" layoutX="240.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/netflix_icon_by_cleytonpr-daq3itw.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

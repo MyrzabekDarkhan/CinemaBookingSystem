@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: F5FFFA;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainUI.User.movieforBooking">
+   <children>
+      <TableView fx:id="movietable" layoutX="281.0" layoutY="-2.0" prefHeight="336.0" prefWidth="721.0">
+         <columns>
+            <TableColumn fx:id="idcolumn" prefWidth="56.0" text="MovieID" />
+            <TableColumn fx:id="firstnamecolumn" prefWidth="191.0" text="Movie Name" />
+            <TableColumn fx:id="lastnamecolumn" prefWidth="99.0" text="Director" />
+            <TableColumn fx:id="detailscolumn" minWidth="0.0" prefWidth="98.0" text="Details" />
+            <TableColumn fx:id="ratingscolumn" prefWidth="76.0" text="Rating" />
+            <TableColumn fx:id="dobcolumn" minWidth="0.0" prefWidth="108.0" text="Date" />
+            <TableColumn fx:id="pricecolumn" maxWidth="400.0" prefWidth="141.0" text="Price" />
+         </columns>
+      </TableView>
+      <Button fx:id="loadformembers" layoutX="66.0" layoutY="6.0" mnemonicParsing="false" onAction="#loadMovieDataForMember" prefHeight="29.0" prefWidth="129.0" style="-fx-background-color: black;" text="Show films" textFill="#318fee" />
+      <VBox layoutX="260.0" layoutY="26.0" prefHeight="574.0" prefWidth="21.0" spacing="7.0" style="-fx-background-color: F5FFFA;">
+         <children>
+            <RadioButton fx:id="bookmoviedolby" mnemonicParsing="false" onAction="#BookMoviesFromDolby" prefHeight="0.0" prefWidth="29.0" />
+            <RadioButton fx:id="bookcomfort" mnemonicParsing="false" onAction="#BookMoviesFromComfort" prefHeight="17.0" prefWidth="29.0" />
+            <RadioButton fx:id="BrooklynHall" mnemonicParsing="false" onAction="#BookMoviesFromBrooklyn" prefHeight="4.0" prefWidth="21.0" />
+            <RadioButton fx:id="libertyhall" mnemonicParsing="false" onAction="#BookMoviesFromLiberty" />
+            <RadioButton fx:id="DarkhanHall" mnemonicParsing="false" onAction="#BookMoviesFromDarkhan" />
+         </children>
+      </VBox>
+      <Separator layoutX="249.0" layoutY="-11.0" orientation="VERTICAL" prefHeight="616.0" prefWidth="7.0" />
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="166.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/icons8-кино-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="377.0" fitWidth="250.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/avatar.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="255.0" fitWidth="747.0" layoutX="253.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/readyplayerone_28.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="58.0" layoutX="252.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/icons8-авторские-права-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="308.0" layoutY="553.0" prefHeight="44.0" prefWidth="387.0" text="ALL COPYRIGHT RESERVED" textFill="#14adff">
+         <font>
+            <Font name="Javanese Text" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="177.0" fitWidth="250.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/best-movies-on-netflix-slice-600x200.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="272.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/nflx-whats-next_large.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="905.0" layoutY="563.0" mnemonicParsing="false" onAction="#BacktoDash" prefHeight="25.0" prefWidth="54.0" style="-fx-background-color: black;" text="Back" textFill="#318fee" />
+   </children>
+</AnchorPane>

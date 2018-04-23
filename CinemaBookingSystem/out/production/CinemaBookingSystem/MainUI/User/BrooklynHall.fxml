@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainUI.User.BrooklynHallController">
+    <children>
+        <Button fx:id="seat1" layoutX="208.0" layoutY="37.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="1" />
+        <Button fx:id="seat2" layoutX="270.0" layoutY="37.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="2" />
+        <Button fx:id="seat3" layoutX="336.0" layoutY="37.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="3" />
+        <Button fx:id="seat4" layoutX="397.0" layoutY="37.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="4" />
+        <Button fx:id="seat5" layoutX="460.0" layoutY="37.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="5" />
+        <Button fx:id="seat6" layoutX="528.0" layoutY="37.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="6" />
+        <Button fx:id="seat8" layoutX="270.0" layoutY="115.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="8" />
+        <Button fx:id="seat7" layoutX="208.0" layoutY="115.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="7" />
+        <Button fx:id="seat9" layoutX="336.0" layoutY="115.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="9" />
+        <Button fx:id="seat10" layoutX="397.0" layoutY="115.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="10" />
+        <Button fx:id="seat11" layoutX="460.0" layoutY="115.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="11" />
+        <Button fx:id="seat12" layoutX="528.0" layoutY="115.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="12" />
+        <Button fx:id="seat13" layoutX="208.0" layoutY="191.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="13" />
+        <Button fx:id="seat14" layoutX="270.0" layoutY="191.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="14" />
+        <Button fx:id="seat15" layoutX="336.0" layoutY="191.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="15" />
+        <Button fx:id="seat16" layoutX="397.0" layoutY="191.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="16" />
+        <Button fx:id="seat17" layoutX="460.0" layoutY="191.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="17" />
+        <Button fx:id="seat18" layoutX="528.0" layoutY="191.0" mnemonicParsing="false" onAction="#selectedSeats" prefHeight="60.0" prefWidth="44.0" text="18" />
+        <Button layoutX="528.0" layoutY="312.0" mnemonicParsing="false" onAction="#BacktoDash" prefHeight="60.0" prefWidth="44.0" text="Exit" />
+        <Label alignment="CENTER" layoutX="-6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="589.0" style="-fx-border-color: black;" styleClass="pageLabel" text="Brooklyn Hall" />
+        <TextField fx:id="nameField" alignment="CENTER" layoutX="29.0" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="149.0" styleClass="fieldsForData" />
+        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="26.0" layoutY="29.0" prefHeight="35.0" prefWidth="35.0" styleClass="labels" text="Name" />
+        <Separator layoutX="178.0" layoutY="29.0" orientation="VERTICAL" prefHeight="373.0" prefWidth="21.0" />
+        <TextField fx:id="contactNumberField" alignment="CENTER" layoutX="30.0" layoutY="189.0" />
+        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="8.0" layoutY="167.0" prefHeight="29.0" prefWidth="108.0" styleClass="labels" text="Contact number" />
+        <TextField fx:id="surnameField" alignment="CENTER" layoutX="29.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="149.0" styleClass="fieldsForData" />
+        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="15.0" layoutY="100.0" prefHeight="25.0" prefWidth="63.0" styleClass="labels" text="Surname" />
+        <TextField fx:id="creditCardField" alignment="CENTER" layoutX="29.0" layoutY="259.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="137.0" prefHeight="25.0" prefWidth="149.0" promptText="xxxx xxxx xxxx xxxxx" />
+        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="27.0" layoutY="243.0" prefHeight="17.0" prefWidth="68.0" styleClass="labels" text="Credit Card" />
+        <Button fx:id="submitButton" layoutX="33.0" layoutY="342.0" mnemonicParsing="false" onAction="#checkData" prefHeight="30.0" prefWidth="142.0" styleClass="submitButton" text="Book " />
+        <Label fx:id="seatStatus" layoutX="199.0" layoutY="298.0" prefHeight="17.0" prefWidth="156.0" style="-fx-text-fill: red;" />
+        <Label fx:id="successfullyCompletedReservation" layoutX="202.0" layoutY="347.0" prefHeight="21.0" prefWidth="156.0" style="-fx-font-size: 15; -fx-text-fill: green;" />
+        <Label fx:id="nameStatus" layoutX="29.0" layoutY="80.0" prefHeight="17.0" prefWidth="124.0" />
+        <Label fx:id="surnameStatus" layoutX="29.0" layoutY="145.0" prefHeight="17.0" prefWidth="124.0" />
+        <Label fx:id="contactNumberStatus" layoutX="7.0" layoutY="213.0" prefHeight="17.0" prefWidth="180.0" />
+        <Label fx:id="creditCardStatus" layoutX="4.0" layoutY="284.0" prefHeight="17.0" prefWidth="187.0" />
+      <Label layoutX="346.0" layoutY="282.0" prefHeight="17.0" prefWidth="76.0" text="Selected film:" />
+      <Label fx:id="MovieNameLabel" layoutX="424.0" layoutY="273.0" prefHeight="35.0" prefWidth="149.0" text="Sherlock Holmes" />
+    </children>
+</AnchorPane>

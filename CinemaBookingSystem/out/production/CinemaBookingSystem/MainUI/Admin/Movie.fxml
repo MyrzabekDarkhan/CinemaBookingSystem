@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainUI.Admin.MovieController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: Black;" tabClosingPolicy="UNAVAILABLE" AnchorPane.rightAnchor="0.0">
+         <tabs>
+            <Tab text="Movie">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="321.0" layoutY="-2.0" prefHeight="683.0" prefWidth="960.0">
+                           <children>
+                              <TableView fx:id="movietable" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #b8bdc4;">
+                                 <columns>
+                                    <TableColumn fx:id="idcolumn" prefWidth="56.0" text="MovieID" />
+                                    <TableColumn fx:id="firstnamecolumn" prefWidth="191.0" text="Movie Name" />
+                                    <TableColumn fx:id="lastnamecolumn" prefWidth="120.0" text="Director" />
+                                    <TableColumn fx:id="detailscolumn" prefWidth="264.0" text="Details" />
+                                    <TableColumn fx:id="ratingscolumn" prefWidth="51.0" text="Rating" />
+                                    <TableColumn fx:id="dobcolumn" minWidth="0.0" prefWidth="105.0" text="Date" />
+                                    <TableColumn fx:id="pricecolumn" prefWidth="246.0" text="Price" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </HBox>
+                        <VBox layoutX="-1.0" prefHeight="681.0" prefWidth="323.0" style="-fx-background-color: #b8bdc4;">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="TOP" prefHeight="29.0" prefWidth="316.0" style="-fx-background-color: #b8bdc4;" text="Add new movie">
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="id" prefHeight="31.0" prefWidth="239.0" promptText="ID" />
+                              <TextField fx:id="moviename" prefHeight="31.0" prefWidth="237.0" promptText="Movie Name" />
+                              <TextField fx:id="director" prefHeight="31.0" prefWidth="235.0" promptText="Director" />
+                              <TextField fx:id="details" prefHeight="31.0" prefWidth="231.0" promptText="Details" />
+                              <TextField fx:id="ratings" promptText="Rating" />
+                              <TextField fx:id="price" layoutX="20.0" layoutY="178.0" promptText="Add Price" />
+                              <DatePicker fx:id="dos" prefHeight="31.0" prefWidth="189.0" promptText="Date of show" />
+                              <Button mnemonicParsing="false" onAction="#addMovie" prefHeight="31.0" prefWidth="321.0" text="Add Movie" />
+                              <Button fx:id="clearFields" mnemonicParsing="false" onAction="#clearFields" prefHeight="31.0" prefWidth="321.0" text="Clear" />
+                              <Button fx:id="loadbutton" mnemonicParsing="false" onAction="#loadMovieData" prefHeight="31.0" prefWidth="321.0" text="Load Data" />
+                              <TextField fx:id="id1" layoutX="20.0" layoutY="228.0" promptText="Write ID to delete movie" />
+                              <Button layoutX="20.0" layoutY="372.0" mnemonicParsing="false" onAction="#deleteMovie" prefHeight="31.0" prefWidth="321.0" text="Delete Movie" />
+                              <Button layoutX="20.0" layoutY="265.0" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="31.0" prefWidth="321.0" text="Back" />
+                              <ImageView fitHeight="137.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../resources/images/netflix2.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

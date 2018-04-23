@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="main" fx:id="main" accessibleRole="TEXT_FIELD" prefHeight="524.0" prefWidth="751.0" style="-fx-background-color: #110808;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="closeButton" cancelButton="true" layoutX="685.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeButtonAction" style="-fx-background-color: #c10d0d;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="booking" layoutX="22.0" layoutY="14.0" prefHeight="37.0" prefWidth="339.0" text="Cinema Booking System" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>5
+      </Label>
+      <Separator layoutY="55.0" prefHeight="14.0" prefWidth="771.0" />
+      <Label id="Username" fx:id="Username" layoutX="22.0" layoutY="107.0" prefHeight="25.0" prefWidth="160.0" text="Enter to the Cinema" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button id="Login" fx:id="Login" layoutX="25.0" layoutY="134.0" mnemonicParsing="false" onAction="#LoginForMember" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: #c10d0d;" text="ENTRANCE" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="label1" layoutX="29.0" layoutY="315.0" text="Are you an Admin?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button id="Signin" fx:id="Signin" layoutX="29.0" layoutY="335.0" mnemonicParsing="false" onAction="#SignInButtonAction" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: #c10d0d;" text="SIGN IN" textFill="WHITE">
+         <font>
+            <Font name="Aharoni Bold" size="12.0" />
+         </font></Button>
+      <Separator layoutX="-8.0" layoutY="415.0" prefHeight="14.0" prefWidth="779.0" />
+      <ImageView id="clapperboard" fx:id="clapperboard" fitHeight="52.0" fitWidth="63.0" layoutX="293.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/icons8-кино-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="281.0" fitWidth="519.0" layoutX="200.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/Netflix-streaming-vs-traditional-cable.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="137.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/icons8-выход-из-системы,-в-кружке,-стрелка-вверх-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="51.0" layoutX="137.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/icons8-блокировка-2-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="99.0" fitWidth="436.0" layoutX="26.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/best-movies-on-netflix-slice-600x200.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
